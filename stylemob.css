@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(211, 255, 224);
+    height: 100%;
+}
+
+
+
+/* navigation Bar */
+nav {
+    background-color: rgb(16, 22, 59);
+    height: 44px;
+}
+
+nav ul {
+    height: 44px;
+    align-items: center;
+    color: white;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li {
+    font-size: 13px;
+    margin: 8px;
+}
+
+
+.brand img {
+    height: 35px;
+    margin-right: 5px;
+    border-radius: 19px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* Song Section */
+.container {
+    display: flex;
+    height: 71vh;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 48px auto;
+    padding: 20px;
+    width: 76%;
+    color: white;
+    background: url('244287.jpg') no-repeat center center/cover;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+   opacity: 0.9;
+}
+
+/* Song List Section */
+.container .songList {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .songList .songItem {
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid  rgb(255, 255, 255);;
+    color: rgba(255, 255, 255, 0.911);
+    border-radius: 12px;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.container .songList .songItem .songListPlay .timeStamp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.container .songList .songItem .songListPlay .timeStamp i {
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.container .songList .songItem .songListPlay .timeStamp i img {
+height: 30px;
+width: 30px;
+}
+
+.container .songList .songItem img {
+    height: 35px;
+    border-radius: 11px;
+    margin: 5px;
+}
+
+
+
+/* Bottom Section */
+.Bottom {
+    position: sticky;
+    height: 80px;
+    color: rgb(255, 252, 252);
+    background-color: rgb(39, 2, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#myProgress {
+    width: 70vw;
+    cursor: pointer;
+
+}
+
+.Bottom .icon i {
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Bottom .songInfo {
+position:absolute;
+left: 147px;
+top: 40px;
+}
+
+.Bottom .songInfo img{
+height: 30px;
+}
